@@ -1,0 +1,22 @@
+.app {
+  font-family: Arial, sans-serif;
+  
+}
+
+.kanban-board {
+  background-color: rgba(244, 246, 250, 255);
+  display: flex;
+  padding: 20px;
+}
+
+.kanban-column {
+  padding: 10px;
+  width: 25%;
+  border-radius: 8px;
+  min-height: 300px;
+}
+
+.ticket-user {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}

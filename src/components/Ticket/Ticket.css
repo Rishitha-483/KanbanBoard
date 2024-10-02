@@ -1,0 +1,108 @@
+.ticket-card {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.ticket-id {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 300;
+}
+
+.ticket-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.ticket-title {
+
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #212529;
+  font-weight: 550;
+}
+
+.ticket-priority-tag {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.priority-icon {
+  color: white;
+  border-radius: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.dot-icon {
+  color: grey;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.ticket-tag {
+  font-size: 0.8rem;
+  color: gray;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.ticket-user-avatar-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  position: relative;
+}
+
+.ticket-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.availability-dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translate(50%, 50%);
+}
+
+.available {
+  background-color: green;
+}
+
+.unavailable {
+  background-color: #a8aaad;
+}
+
+.group-name {
+  margin-left: 8px;
+  font-weight: bold;
+}

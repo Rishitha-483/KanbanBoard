@@ -1,0 +1,141 @@
+.grouping-selector {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.grouping-selector button {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border: solid 1px rgb(186, 186, 186);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.grouping-selector button:hover {
+  background-color: white;
+  color: black;
+}
+
+.grouping-selector button .icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.grouping-options {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 10;
+  width: 250px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.grouping-options label {
+  font-size: 13px;
+  display: block;
+  color: grey;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.grouping-options select {
+  width: 100px;
+  height: 28px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px !important;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.options {
+  margin-bottom: 10px;
+  
+}
+
+.options label {
+  padding-right: 15px;
+  white-space: nowrap;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .grouping-options {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grouping-selector {
+    width: 100%;
+  }
+
+  .grouping-options {
+    width: 100%;
+  }
+
+  .grouping-selector button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .options label,
+  .options select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .grouping-options select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grouping-selector {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .grouping-options {
+    width: 100%;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .options label,
+  .options select {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
